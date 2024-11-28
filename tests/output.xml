@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.10.12 on linux)" generated="2024-11-28T10:22:42.906363" rpa="false" schemaversion="5">
+<suite id="s1" name="Test Window Handling" source="/home/araj17/Testing/tests/test_window_handling.robot">
+<test id="s1-t1" name="Handle Browser Tabs And Capture Screenshots" line="6">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-11-28T10:22:43.021666" level="INFO">Opening browser 'chrome' to base url 'https://practicesoftwaretesting.com/product/01JDRET6507DY8NB1WW957EF10'.</msg>
+<arg>${TAB1_URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-11-28T10:22:43.021502" elapsed="3.192419"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-11-28T10:22:46.214362" elapsed="0.021998"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-28T10:22:49.237391" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-28T10:22:46.236729" elapsed="3.001064"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-11-28T10:22:49.398686" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="screenshots/tab1.png"&gt;&lt;img src="screenshots/tab1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>${SCREENSHOT_TAB1}</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-11-28T10:22:49.238547" elapsed="0.160289"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-28T10:22:52.399556" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-28T10:22:49.399139" elapsed="3.000802"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2024-11-28T10:22:52.401460" level="INFO">Executing JavaScript:
+window.open()
+Without any arguments.</msg>
+<arg>window.open()</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2024-11-28T10:22:52.400581" elapsed="0.019473"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-28T10:22:55.420979" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-28T10:22:52.420362" elapsed="3.001014"/>
+</kw>
+<kw name="Switch Window" owner="SeleniumLibrary">
+<arg>NEW</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" start="2024-11-28T10:22:55.422430" elapsed="0.019330"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-11-28T10:22:55.442987" level="INFO">Opening url 'https://practicesoftwaretesting.com/product/01JDRET659CBPTJ7D70AS5W5YD'</msg>
+<arg>${TAB2_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-11-28T10:22:55.442448" elapsed="0.118455"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-28T10:22:58.561876" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-28T10:22:55.561255" elapsed="3.000991"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-11-28T10:22:58.725914" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="screenshots/tab2.png"&gt;&lt;img src="screenshots/tab2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>${SCREENSHOT_TAB2}</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-11-28T10:22:58.563050" elapsed="0.162958"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-28T10:23:01.726690" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-28T10:22:58.726193" elapsed="3.000920"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-11-28T10:23:01.727977" elapsed="0.073198"/>
+</kw>
+<status status="PASS" start="2024-11-28T10:22:43.020836" elapsed="18.780617"/>
+</test>
+<status status="PASS" start="2024-11-28T10:22:42.907426" elapsed="18.894519"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Test Window Handling">Test Window Handling</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
